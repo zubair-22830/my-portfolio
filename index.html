@@ -92,14 +92,16 @@
         }
         
         .logo {
-          
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--secondary-color);
+            display: flex;
+            align-items: center;
         }
-        
-        .logo span {
+
+        .logo .folio {
             color: var(--primary-color);
+            margin-top: 10px;
         }
         
         .nav-links {
@@ -416,7 +418,14 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">Port<span class="folio">folio</span></a>
+                <div class="logo">
+                    <span>
+                        Port
+                    </span>
+                    <span class="folio">
+                        folio
+                    </span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
